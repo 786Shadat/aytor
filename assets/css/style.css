@@ -1,0 +1,300 @@
+/* 
+Template Name: Aytor
+version: 1.0.0
+Author: Aytor
+Author URI: 
+
+Table of content
+==============================
+=> Home Page
+***************
+ 1) Nav section
+ 2) Benner section
+
+*/
+/* common css file start */
+body{    
+font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, a, button {
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+small, span,
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style-type: none;
+}
+/* common css file end */
+/* nav section css start */
+#myNav ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #11161E;
+    transition: .7s;
+}
+#myNav ul li:hover a,
+#myNav li:hover button{
+    color: #FF6F61;
+}
+#myNav li,
+#myNav li button{
+    border: none;
+    background: none;
+    padding: 0 12px;
+    color: #151A32;
+}
+#myNav .navber-manu ul li button{
+    position: relative;
+}
+#myNav .navber-manu ul li button span{
+    position: absolute;
+    background: #FF6F61;
+    font-size: 14px;
+    width: 15px;
+    height: 15px;
+    line-height: 16px;
+    right: 2px;
+    top: -5px;
+    border-radius: 50%;
+    color: #FFF;
+}
+/* nav section css end */
+/* benner section css start  */
+
+#benner .benner_bg_item{
+    height: 800px;
+    background-size: cover !important;
+    background-position: center !important;
+    color: #fff;
+
+}
+#benner .benner_bg_item h1{
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#benner .benner_bg_item h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+#benner .benner_bg_item p {
+    font-size: 16px;
+    font-weight: 400;
+}
+#benner .benner_bg_item a{
+    color: #fff;
+    background-color: #FF6F61;
+    margin: 20px 0;
+    padding: 16px 25px !important;
+    display: inline-block;
+}
+#benner .benner_item:hover a{
+    color: #FF6F61;
+    background: #fff;
+
+}
+#benner .benner2{
+    color: #11161E;
+}
+#benner .benner2 a {
+    color: #11161E;
+}
+#benner .benner_slider_dots {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	bottom: 234px;
+	left: 118px;
+}
+#benner .benner_slider_dots li{
+    line-height: 0;
+    margin-right: 5px;
+}
+#benner .benner_slider_dots li button {
+    font-size: 0;
+    border: 0;
+    width: 10px;
+    height: 6px;
+    border-radius: 5px;
+    background:#fff;
+    transition: .3s;
+}
+#benner .benner_slider_dots li.slick-active button{
+    width: 26px;
+    height: 6px;
+    border-radius: 5px;
+    background: #FF6F61;
+}
+
+/* benner section css end */
+/* product section css start */
+#product {
+    margin: 90px 0 90px 0;
+}
+#product .product_item2 {
+    padding: 17px 0 0 0;
+}
+#product .product_item3 img{
+    width: 636px;
+    height: 523px;
+}
+#product .product_item{
+    position: relative;
+
+}
+#product .product_item2{
+    position: relative;
+
+}
+#product .product_item3{
+    position: relative;
+}
+#product .overley{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    background: rgba(17, 22, 30, 0.47);
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s;
+}
+#product .product_item3 .overley{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    background: rgba(17, 22, 30, 0.47);
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s;
+}
+#product .product_item2 .overley{
+    top: 40px;
+}
+#product .product_item3 .overley{
+    right: 50px;
+}
+#product .product_item:hover .overley{
+    opacity: 1;
+    visibility: visible;
+}
+#product .product_item2:hover .overley{
+    opacity: 1;
+    visibility: visible;
+}
+#product .product_item3:hover .overley{
+    opacity: 1;
+    visibility: visible;
+}
+#product .overley h4{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .5s;
+}
+#product .overley a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+    padding: 14px 0 0 0;
+    transition: .5s;
+}
+#product .overley_info .info2:hover a{
+    color: #FF6F61;
+}
+#product .overley_info .info:hover h4{
+    color: #FF6F61;
+    cursor: pointer;
+}
+
+/* product section css end */
+/* new arrivals section start */
+#arrivals .new_arrival_info ins {
+    text-decoration: none;
+    font-size: 16px;
+}
+#arrivals .new_arrival_info del{
+    font-size: 16px;
+    color: #BDBDBD;
+}
+#arrivals .new_arrival_info h4{
+    color: #11161E;
+    font-size: 18px;
+    font-weight:600;
+}
+#arrivals .new_arrival_info i{
+    color: #FF6F61;
+    padding-top: 20px;
+}
+#arrivals .new_arrival_info{
+    border: 2px solid#F1F3F4;
+    text-align: center;
+}
+#arrivals .new_arrival_item{
+    position: relative;
+    padding: 0 12px;
+}
+#arrivals .new_arrival_icon_overley{
+    position: absolute;
+    top: 40px;
+    right: 17px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s;
+}
+#arrivals .new_arrival_item:hover .new_arrival_icon_overley{
+    opacity: 1;
+    visibility: visible;
+}
+#arrivals .new_arrival_icon_overley ul li:hover a{
+    color: #fff;
+    background: #FF6F61;
+}
+#arrivals .new_arrival_icon_overley ul li a{
+    width: 36px;
+    height: 36px;
+    border-radius:50% ;
+    /* line-height: 36px; */
+    box-shadow: 0 3px 10px 0;
+    background: rgba(0, 0, 0, 0.08);
+    display: block;
+    color: #000;
+    margin: 5px;
+    transition: .5s;
+}
+#arrivals .new_arrival_badge {
+	position: absolute;
+	top: 13px;
+	left: 17px;
+	padding: 1px 15px;
+	color: #fff;
+	background: #FF6F61;
+	transform: rotate(-89.99deg);
+    border-radius: 20px 0 0 20px;
+}
+#arrivals .new_arrival-arrow{
+    background: #838793;
+    color: #fff;
+    padding: 17px 9px;
+}
+
+/* new arrivals section */
